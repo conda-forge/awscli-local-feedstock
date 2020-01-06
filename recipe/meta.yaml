@@ -25,7 +25,7 @@ requirements:
 
 test: 
   commands: 
-    - awslocal -h  # [not win]
+    - awslocal -h
 
 about:
   home: "https://github.com/localstack/awscli-local"

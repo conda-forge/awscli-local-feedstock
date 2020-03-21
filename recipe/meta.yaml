@@ -1,18 +1,18 @@
 {% set name = "awscli-local" %}
-{% set version = "0.5" %}
+{% set version = "0.6" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 9e1899f17b3a91dee98f7b35265139a202ece981c05216fabcc413ed8d284403
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: bdf604a86f344a82eff57b52260a53db0d20272cf1cc5a36c77b79719988b931
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -23,18 +23,18 @@ requirements:
     - localstack-client
     - python
 
-test: 
-  commands: 
+test:
+  commands:
     - awslocal -h
 
 about:
-  home: "https://github.com/localstack/awscli-local"
-  license: "Apache-2.0"
-  license_family: "APACHE"
-  license_file: "LICENSE"
-  summary: "Thin wrapper around the \"aws\" command line interface for use with LocalStack"
-  doc_url: "https://pypi.org/project/awscli-local/"
-  dev_url: "https://github.com/localstack/awscli-local"
+  home: https://github.com/localstack/awscli-local
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: Thin wrapper around the "aws" command line interface for use with LocalStack
+  doc_url: https://pypi.org/project/awscli-local/
+  dev_url: https://github.com/localstack/awscli-local
 
 extra:
   recipe-maintainers:

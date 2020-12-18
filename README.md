@@ -5,11 +5,13 @@ Home: https://github.com/localstack/awscli-local
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/awscli-local-feedstock/blob/master/LICENSE.txt)
 
 Summary: Thin wrapper around the "aws" command line interface for use with LocalStack
 
+Development: https://github.com/localstack/awscli-local
 
+Documentation: https://pypi.org/project/awscli-local/
 
 Current build status
 ====================

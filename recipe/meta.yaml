@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - awscli
     - localstack-client
-    - python
+    - python >=3.6
 
 test:
   commands:
@@ -38,6 +38,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - mwilson8
     - oblute
     - benhuff

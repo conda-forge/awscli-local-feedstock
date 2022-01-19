@@ -1,4 +1,4 @@
-{% set name = "gh repo clone AdMax18/awscli-local-feedstock" %}
+{% set name = "awscli-local" %}
 {% set version = "0.18" %}
 
 package:

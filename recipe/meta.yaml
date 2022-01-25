@@ -1,5 +1,5 @@
 {% set name = "awscli-local" %}
-{% set version = "0.13" %}
+{% set version = "0.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 226271fa7ad5d8aed3410c2065e40c94a5f5b5eb882c548b011500874106f8bb
+  sha256: 861d0b7d09c7210052a19393f1877115ec6e5e08430ab48f12be8414bd90bda5
 
 build:
   noarch: python
@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - awscli
     - localstack-client
-    - python
+    - python >=3.6
 
 test:
   commands:
@@ -39,5 +39,4 @@ about:
 extra:
   recipe-maintainers:
     - mwilson8
-    - oblute
-    - benhuff
+    - mxr-conda

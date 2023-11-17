@@ -1,5 +1,5 @@
 {% set name = "awscli-local" %}
-{% set version = "0.21" %}
+{% set version = "0.21.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 99aad6b8e0cfefb2093453866cbcd24e710d7e6a1523cac0969ed0f64442ea7c
+  sha256: 31a579438a932127d32c27c1dbd656197a12c3183facb18afe8bd713ec9aab3d
 
 build:
   noarch: python

@@ -38,5 +38,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - mwilson8
     - mxr-conda
